@@ -1,1 +1,2 @@
-# ot-harjoitustyo
+# Ohjelmistotekniikka, harjoitustyö
+ajattelin tehdä shakkipelin
