@@ -10,6 +10,7 @@ class TestMaksukortti(unittest.TestCase):
 
     #def test_konstruktori_ei_aseta_saldoa_negatiiviseksi(self):
     #    kortti = Maksukortti(-1000)
+    
     #    self.assertEqual(str(self.kortti), "Kortilla on rahaa 0.00 euroa")
 
     def test_syo_edullisesti_vahentaa_saldoa_oikein(self):
