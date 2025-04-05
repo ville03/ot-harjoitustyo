@@ -1,11 +1,11 @@
 import pygame
 
-
 class GameLoop:
     def __init__(self, renderer, event_queue, clock):
         self._renderer = renderer
         self._event_queue = event_queue
         self._clock = clock
+        self._textfield_active = False
 
     def start(self):
         while True:
@@ -20,11 +20,21 @@ class GameLoop:
 
     def _handle_events(self):
         for event in self._event_queue.get():
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_ESCAPE:
-                    return False
+            if self._textfield_active:
+                if self._renderer.tf().handle_event(event) is True:
+                    self._textfield_active = True
+                else:
+                    self._textfield_active = False
+            else:
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_ESCAPE:
+                        return False
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    self._textfield_active = self._renderer.tf().handle_event(event)
+
             if event.type == pygame.QUIT:
                 return False
+        return True
 
     def _render(self):
         self._renderer.render()
