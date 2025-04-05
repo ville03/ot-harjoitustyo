@@ -9,13 +9,12 @@ class GameLoop:
 
     def start(self):
         while True:
-            if self._handle_events() == False:
+            if self._handle_events() is False:
                 break
 
-            current_time = self._clock.get_ticks()
+            # current_time = self._clock.get_ticks()
 
             self._render()
-
 
             self._clock.tick(60)
 
