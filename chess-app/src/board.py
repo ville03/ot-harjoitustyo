@@ -28,15 +28,15 @@ class Board:
             move = move[:-1]
         if move[0] == "R":
             return self.rook(move)
-        elif move[0] == "N":
+        if move[0] == "N":
             return self.knight(move)
-        elif move[0] == "B":
+        if move[0] == "B":
             return self.bishop(move)
-        elif move[0] == "Q":
+        if move[0] == "Q":
             return self.queen(move)
-        elif move[0] in "K0": # king move (castle)
+        if move[0] in "K0": # king move (castle)
             return self.king(move)
-        elif move[0] in "abcdefgh": #pawn move
+        if move[0] in "abcdefgh": #pawn move
             result = self.pawn(move)
         return result
 
