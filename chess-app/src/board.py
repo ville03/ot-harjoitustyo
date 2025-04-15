@@ -65,7 +65,7 @@ class Board:
             move=move[2:]
         elif self.bs[8-int(move[1])][ord(move[0]) - 97] != "": # invalid end locatition
             return False
-        if move[2]=="=":
+        if len(move)>2:
             piece = move[3]
             move = move[:-2]
         if self.whitesturn:
