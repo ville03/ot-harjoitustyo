@@ -21,10 +21,13 @@ class GameLoop:
     def _handle_events(self):
         for event in self._event_queue.get():
             if self._textfield_active:
-                if self._renderer.tf().handle_event(event) is True:
+                test = self._renderer.tf().handle_event(event)
+                if test is True:
                     self._textfield_active = True
-                else:
+                elif test is False:
                     self._textfield_active = False
+                else:
+                    self._renderer.board.move(test)
             else:
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:

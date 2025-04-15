@@ -26,8 +26,9 @@ class TextField:
                 if event.key == pygame.K_RETURN:
                     text = self.text
                     self.text = ''
+                    self.txt_surface = self.font.render(self.text, True, self.color)
                     return text
-                elif event.key == pygame.K_BACKSPACE:
+                if event.key == pygame.K_BACKSPACE:
                     self.text = self.text[:-1]
                 elif event.key == pygame.K_ESCAPE:
                     self.active = False

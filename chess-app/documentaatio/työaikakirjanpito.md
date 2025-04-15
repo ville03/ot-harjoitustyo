@@ -2,3 +2,4 @@
 ~1h ti 1.4.2025 a bunch of setup
 ~2h ke 2.4.2025 chessboard and pieces initialised
 ~3h la 5.4.2025 
+~3h ti 15.4.2025 piece movement and start of tests

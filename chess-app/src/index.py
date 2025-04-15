@@ -19,7 +19,6 @@ inital_board_state = [["bR", "bN", "bB", "bQ", "bK", "bB", "bN", "bR"],
 def main():
 
     display = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
-    display.fill("green")
 
     pygame.display.set_caption("Chess")
     pygame.font.init()

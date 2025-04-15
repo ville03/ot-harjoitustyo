@@ -19,7 +19,8 @@ class Renderer:
 
     def render(self):
         color = black
-
+        backgroud=((0, 0), (self._width, self._height))
+        pygame.draw.rect(self._display, (0, 100, 0), backgroud)
 
         piece_font = pygame.font.SysFont(
             pygame.font.get_default_font(), self._square_side_length)
@@ -45,7 +46,7 @@ class Renderer:
                 if self.board.board()[i][j] == "":
                     continue
                 # check piece color
-                if list(self.board.board()[i][j])[0] == "b":
+                if list(self.board.board()[i][j])[0] == "w":
                     color = white
                 else:
                     color = black
