@@ -20,6 +20,9 @@ Sovellus aukeaa alkunäkymään, josta on mahdollista siirtyä uudteen peliin, j
 ## Perusversion tarjoama toiminnallisuus
 
 - Käyttäjä voi luoda uuden pelin ja pelata sitä
+- shakkipeli on ilman shakkaamista (vaikuttaa vain linnoituksessa ja peli kestää vuoron pidempään)
+- siirtojen täsmennys ei toimi kuningattarella lähetillä ja hevosella
+- 
 
 ## Jatkokehitysideoita
 
