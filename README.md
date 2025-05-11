@@ -11,6 +11,8 @@ työaikakirjanpito: https://github.com/ville03/ot-harjoitustyo/blob/main/chess-a
 
 changelog: https://github.com/ville03/ot-harjoitustyo/blob/main/chess-app/documentaatio/changelog.md
 
+käyttöohje: https://github.com/ville03/ot-harjoitustyo/blob/main/chess-app/documentaatio/kayttoohje.md
+
 ## Asennus
 
 1. Asenna riippuvuudet komennolla:
